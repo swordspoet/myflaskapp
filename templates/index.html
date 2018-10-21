@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <div class="jumbotron text-center">
+        <h1>奥森导航</h1>
+        <p class="lead">一个专门服务开发者的导航网站</p>
+        {% if session.logged_in == NULL %}
+            <a href="/register" class="btn btn-primary btn-lg">注册<a>
+            <a href="/login" class="btn btn-success btn-lg">登陆<a>
+        {% endif %}
+    </div>
+
+    <div class="jumbotron text-left">
+        <h4>技术论坛&社区</h4>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="https://cosx.org/">统计之都</a></li>
+            <li class="list-group-item"><a href="https://tech.meituan.com/">美团点评技术团队博客</a></li>
+            <li class="list-group-item"><a href="https://www.v2ex.com">v2ex</a></li>
+            <li class="list-group-item"><a href="https://www.ourcoders.com">我们程序员</a></li>
+            <li class="list-group-item"><a href="https://www.libinx.com">Thinking Realm</a></li>
+        </ul>
+
+        <h4>技术博客</h4>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="http://www.ruanyifeng.com/blog/">阮一峰的网络日志</a></li>
+            <li class="list-group-item"><a href="https://yihui.name/cn/">谢益辉-中文博客</a> </li>
+            <li class="list-group-item"><a href="https://www.zhihu.com/people/breaknever/activities">微调-知乎</a> </li>
+            <li class="list-group-item"><a href="http://www.ideawu.net/blog/">idea's blog</a> </li>
+            <li class="list-group-item"><a href="http://www.flickering.cn/">火光摇曳-腾讯的一个技术团队博客</a> </li>
+            <li class="list-group-item"><a href="https://baojiebaojie.wordpress.com">语义噪声</a> </li>
+        </ul>
+    </div>
+
+    <div class="landing-section features">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 id="why-bazel" align="center">推荐站点<a class="anchorjs-link " href="#why-bazel" aria-label="Anchor link for: why bazel" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+            <h4>技术论坛&社区</h4>
+            <li class="list-group-item"><a href="http://www.ruanyifeng.com/blog/">阮一峰的网络日志</a></li>
+            <li class="list-group-item"><a href="https://yihui.name/cn/">谢益辉-中文博客</a> </li>
+            <li class="list-group-item"><a href="https://www.zhihu.com/people/breaknever/activities">微调-知乎</a> </li>
+            <li class="list-group-item"><a href="http://www.ideawu.net/blog/">idea's blog</a> </li>
+            <li class="list-group-item"><a href="http://www.flickering.cn/">火光摇曳-腾讯的一个技术团队博客</a> </li>
+            <li class="list-group-item"><a href="https://baojiebaojie.wordpress.com">语义噪声</a> </li>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <h4>技术博客</h4>
+            <li class="list-group-item"><a href="https://cosx.org/">统计之都</a></li>
+            <li class="list-group-item"><a href="https://tech.meituan.com/">美团点评技术团队博客</a></li>
+            <li class="list-group-item"><a href="https://www.v2ex.com">v2ex</a></li>
+            <li class="list-group-item"><a href="https://www.ourcoders.com">我们程序员</a></li>
+            <li class="list-group-item"><a href="https://www.libinx.com">Thinking Realm</a></li>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-sm-6 col-md-3">
+          <h4 id="scalable">保留<a class="anchorjs-link " href="#scalable" aria-label="Anchor link for: scalable" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a></h4>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <h4 id="extensible-to-your-needs">保留<a class="anchorjs-link " href="#extensible-to-your-needs" aria-label="Anchor link for: extensible to your needs" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}
